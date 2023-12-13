@@ -2,6 +2,8 @@
 
 I performed this analysis in two parts (corresponding to the two notebooks here): first, I wrote a Nextflow pipeline to process the raw sequencing reads on a SLURM HPC using conda environments for the necessary bioinformatics tools. The resulting Salmon quantification files were then imported into R for differential analysis using different Bioconductor packages including DESeq2.
 
+---
+
 The Nextflow script sets up an RNA-seq analysis pipeline that processes raw sequencing reads through quality control (using FASTQC and TRIMGALORE), builds an index (with SALMON), and performs quantification on the processed reads. Below is the description of its components:
 
 ### Overall Functionality:
@@ -30,6 +32,8 @@ The pipeline facilitates RNA-seq analysis by performing the following steps:
 
 ### Configuration:
 The `nextflow.config` file specifies parameters for the execution environment, including using the Slurm executor for job execution and configuring Conda environments for tool dependencies.
+
+---
 
 The R script is an analysis pipeline for RNA-seq data processing and differential expression analysis. Here's a breakdown of its components:
 
