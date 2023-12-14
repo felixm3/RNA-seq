@@ -60,4 +60,6 @@ The R script is an analysis pipeline for RNA-seq data processing and differentia
 - **Normalized Data**: Data after normalization and transformation steps.
 - **Differential Expression Results**: Provides differential expression results, including log2 fold changes, p-values, adjusted p-values, and associated gene symbols.
 - **Visualization Outputs**: Scatter plots for PCA and volcano plots for visualizing differentially expressed genes.
+
+  [The dataset](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE162607) is from the NCBI Gene Expression Omnibus (GEO) repository.
   
