@@ -18,16 +18,16 @@ The pipeline facilitates RNA-seq analysis by performing the following steps:
 - **Genome transcriptome reference file**: Provided via `params.gentrome`.
 - **Decoy sequences file**: Specified by `params.decoys`.
 
-### Required R Packages and Bioinformatics Tools:
-- **FASTQC**: Quality control tool for raw sequencing reads.
-- **TRIMGALORE**: Tool for trimming adapter sequences and low-quality bases.
-- **SALMON**: Used for indexing the transcriptome and quantifying gene expression.
+### Required Bioinformatics Tools:
+- **FastQC**: Quality control tool for raw sequencing reads.
+- **Trim Galore**: Tool for trimming adapter sequences and low-quality bases.
+- **Salmon**: Used for indexing the transcriptome and quantifying gene expression.
 - **Nextflow** serves as the workflow manager.
 
 ### Outputs:
-- **FASTQC Reports**: Quality assessment reports for each sample.
+- **FastQC Reports**: Quality assessment reports for each sample.
 - **Trimmed Reads**: Trimmed and quality-filtered fastq files.
-- **SALMON Index**: Indexed transcriptome for subsequent quantification.
+- **Salmon Index**: Indexed transcriptome for subsequent quantification.
 - **Quantification Results**: Gene expression quantification files.
 
 ### Configuration:
@@ -53,7 +53,7 @@ The R script is an analysis pipeline for RNA-seq data processing and differentia
 - **R Packages**:
   - `tximport`, `AnnotationHub`, `ensembldb`, `DESeq2`, `ggplot2`, `dplyr`, `pheatmap`, `RColorBrewer`, `biomaRt`, `EnhancedVolcano`, etc.
 - **Bioinformatics Tools**:
-  - **SALMON**: Used for quantifying transcript abundance from RNA-seq data.
+  - **Salmon**: Used for quantifying transcript abundance from RNA-seq data.
 
 ### Outputs Generated:
 - **Quality Visualizations**: Heatmaps depicting sample distances and differential gene expression.
